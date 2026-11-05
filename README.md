@@ -35,7 +35,15 @@ enabled on your app**, otherwise Ramp rejects the token request with
 
 ## 2. Install
 
-Requires Python 3.10+.
+**Easiest:** with [uv](https://docs.astral.sh/uv/) installed, Hermes can run the server
+straight from GitHub; no clone needed. Use this in step 3:
+
+```yaml
+    command: "uvx"
+    args: ["--from", "git+https://github.com/am3cramirez/ramp", "ramp-mcp"]
+```
+
+**Or install from a clone** (requires Python 3.10+):
 
 ```bash
 git clone https://github.com/am3cramirez/ramp.git ~/ramp-mcp
